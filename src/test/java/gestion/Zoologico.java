@@ -31,7 +31,12 @@ public class Zoologico {
 		this.zonas=nuevo;}
 	
 	public void agregarZonas(Zona nueva){
+		nueva.setZoologico(this);
 		this.zonas.add(nueva);}
 	
 	public int cantidadTotalAnimales() {
-		return this.zonas.get(0).getAnimales().get(0).getTotalAnimales();}}
+		int respuesta = 0;
+		for(int i = 0; i < zonas.size(); i++) {
+			respuesta += zonas.get(i).cantidadAnimales();
+		}
+		return respuesta;}}
