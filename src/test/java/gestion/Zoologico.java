@@ -27,7 +27,7 @@ public class Zoologico {
 	public void setUbicacion(String nuevo) {
 		this.ubicacion=nuevo;}
 	
-	public void setZonas(ArrayList<Zona> nuevo) {
+	public void setZona(ArrayList<Zona> nuevo) {
 		this.zonas=nuevo;}
 	
 	public void agregarZonas(Zona nueva){
