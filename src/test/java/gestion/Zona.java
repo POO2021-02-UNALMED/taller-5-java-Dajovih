@@ -31,7 +31,8 @@ public class Zona {
 	public static void setAnimales(ArrayList<Animal> nuevo) {
 		Zona.animales=nuevo;}
 	
-	public static void agregarAnimales(Animal animal) {
+	public void agregarAnimales(Animal animal) {
+		animal.setZona(this);
 		Zona.animales.add(animal);}
 	
 	public int cantidadAnimales() {
